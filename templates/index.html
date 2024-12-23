@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔮 Astrological Chart ✨</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="/static/ambience.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <!-- Sidebar Controls -->
+        <div class="sidebar">
+            <h2>🔧 Controls</h2>
+            <label>Date:</label>
+            <input type="date" id="date">
+            <label>Time:</label>
+            <input type="time" id="time">
+            <button onclick="updateChart()">Update Chart</button>
+        </div>
+
+        <!-- Chart Display -->
+        <div class="chart-container">
+            <h1>🔮 Astrological Chart ✨</h1>
+            <div class="chart-wrapper">
+                <img id="chart" src="" alt="Astrological Chart">
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
